@@ -1,0 +1,32 @@
+body{
+    background-color:white;
+    margin: 0px;
+}
+
+.content {
+    padding: 16px;
+    color: black;
+}
+
+#sticky_nav {
+    background-color: rgb(20, 20, 20);
+    margin: 0;
+    overflow: hidden;
+    position:-webkit-sticky;    
+    position: sticky;
+    top: 0;
+}
+
+#sticky_nav a {
+    color: white;
+    float: right;
+    display: block;
+    padding: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#sticky_nav a:hover {
+    background-color: rgb(231, 231, 231);
+    color: rgb(20, 20, 20);
+}
