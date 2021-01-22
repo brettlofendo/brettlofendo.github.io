@@ -1,3 +1,7 @@
+html {
+    scroll-padding-top: 64px; /* height of sticky navbar */
+}
+
 body{
     background-color:rgb(245, 245, 245);
     margin: 0px;
@@ -49,7 +53,6 @@ body{
     font-family: 'Roboto Mono', monospace;
     max-width: 900px;
     margin: auto;
-    font-weight: bold;
 }
 
 .dotted {
@@ -100,4 +103,12 @@ body{
 #portrait {
     width: 260px;
     border-radius: 20px;
+}
+
+.icons {
+    display: inline-block;
+    float: right;
+    width: 50px;
+    cursor: pointer;
+    padding-left: 20px;
 }
