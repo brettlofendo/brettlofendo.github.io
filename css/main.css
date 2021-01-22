@@ -1,5 +1,5 @@
 body{
-    background-color:white;
+    background-color:rgb(245, 245, 245);
     margin: 0px;
 }
 
@@ -21,12 +21,82 @@ body{
     color: white;
     float: right;
     display: block;
-    padding: 14px;
+    padding: 20px;
     text-align: center;
     text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
 }
 
 #sticky_nav a:hover {
     background-color: rgb(231, 231, 231);
     color: rgb(20, 20, 20);
+}
+
+.title {
+    text-align: center;
+}
+
+#greeting {
+    padding-top: 40px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
+#headline {
+    font-size: 18px;
+    font-family: 'Roboto Mono', monospace;
+    max-width: 900px;
+    margin: auto;
+    font-weight: bold;
+}
+
+.dotted {
+    border-top: 3px dashed rgb(165, 165, 165);
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.component {
+    /* width: 80%; */
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+}
+
+.component_title {
+    font-size: 35px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    display: block;
+}
+
+.component_body {
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Roboto Mono', monospace;
+    max-width: 600px;
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+    text-align: left;
+}
+
+.component_image {
+    display: inline-block;
+    float: right;
+}
+
+@media only screen and (max-width: 1000px) {
+    .component_image {
+        display: none;
+    }
+}
+
+#portrait {
+    width: 260px;
+    border-radius: 20px;
 }
