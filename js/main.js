@@ -28,3 +28,4 @@ mission.onclick = function openMission() {
 restapi.onclick = function openRestapi() {
     window.open("https://github.com/brettlofendo/scope", "_blank");
 }
+
