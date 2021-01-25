@@ -91,6 +91,18 @@ body{
     text-align: left;
 }
 
+.contact_body  {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-family: 'Roboto Mono', monospace;
+    max-width: 800px;
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+    text-align: left;
+}
+
 .component_image {
     display: inline-block;
     float: right;
@@ -120,8 +132,10 @@ body{
     background-color:rgb(245, 245, 245);
     margin-top: 5px;
     font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
     cursor: pointer;
-    height: 30px;
+    height: 35px;
+    border-radius: 8px;
 }
 
 .resume_button:hover {
