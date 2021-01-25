@@ -19,6 +19,7 @@ body{
     position:-webkit-sticky;    
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 #sticky_nav a {
@@ -68,7 +69,7 @@ body{
     /* min-width: 600px; */
     margin-left: auto;
     margin-right: auto;
-    height: 300px;
+    /* height: 300px; */
 }
 
 .component_title {
@@ -80,6 +81,7 @@ body{
 
 .component_body {
     margin-top: 10px;
+    margin-bottom: 30px;
     font-size: 18px;
     font-family: 'Roboto Mono', monospace;
     max-width: 500px;
@@ -92,6 +94,7 @@ body{
 .component_image {
     display: inline-block;
     float: right;
+    /* margin-bottom: 30px; */
 }
 
 @media only screen and (max-width: 1000px) {
@@ -111,4 +114,84 @@ body{
     width: 50px;
     cursor: pointer;
     padding-left: 20px;
+}
+
+.resume_button {
+    background-color:rgb(245, 245, 245);
+    margin-top: 5px;
+    font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
+    height: 30px;
+}
+
+.resume_button:hover {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    border-color: white;
+}
+
+.resume_button:active {
+    transform: translateY(4px);
+}
+
+.experience_grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    /* padding: 10px; */
+    /* grid-row-gap: 10px; */
+}
+
+.grid_item {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    display: block;
+    position: relative;
+}
+
+.grid_image {
+    width: 270px;
+    height: 270px;
+    object-fit: scale-down;
+    display: block;
+}
+
+.overlay {
+    /* display: none; */
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    cursor: pointer;
+    position: absolute;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.overlay_text {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    line-height: 150%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    /* margin-left: auto;
+    margin-right: auto; */
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
