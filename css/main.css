@@ -28,6 +28,7 @@ body{
     z-index: 1;
 }
 
+
 #sticky_nav a {
     color: white;
     float: right;
@@ -37,6 +38,12 @@ body{
     text-decoration: none;
     font-family: 'Roboto Mono', monospace;
     font-size: 18px;
+}
+
+@media only screen and (max-width: 640px) {
+    #sticky_nav a {
+        font-size: 14px;
+    }
 }
 
 #sticky_nav a:hover {
@@ -124,11 +131,23 @@ input:checked + .slider:before {
     padding-bottom: 20px;
 }
 
+@media only screen and (max-width: 640px) {
+    #greeting {
+        font-size: 40px;
+    }
+}
+
 #headline {
     font-size: 18px;
     font-family: 'Roboto Mono', monospace;
     max-width: 900px;
     margin: auto;
+}
+
+@media only screen and (max-width: 640px) {
+    #headline {
+        font-size: 14px;
+    }
 }
 
 .dotted {
@@ -153,6 +172,11 @@ input:checked + .slider:before {
     display: block;
 }
 
+@media only screen and (max-width: 640px) {
+    .component_title {
+        font-size: 24px;
+    }
+}
 
 .component_body {
     margin-top: 10px;
@@ -166,6 +190,13 @@ input:checked + .slider:before {
     text-align: left;
 }
 
+@media only screen and (max-width: 640px) {
+    .component_body {
+        font-size: 14px;
+    }
+}
+
+
 #contact_body  {
     margin-top: 10px;
     margin-bottom: 30px;
@@ -178,6 +209,13 @@ input:checked + .slider:before {
     text-align: left;
 }
 
+@media only screen and (max-width: 640px) {
+    #contact_body {
+        font-size: 14px;
+    }
+}
+
+
 #contact_body a:visited {
     color: rgb(50, 190, 245);
 }
@@ -189,19 +227,24 @@ input:checked + .slider:before {
 }
 
 .component_image {
-    display: inline-block;
-    float: right;
-}
-
-@media only screen and (max-width: 1000px) {
-    .component_image {
-        display: none;
-    }
+    display: block;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* float: right; */
 }
 
 #portrait {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 260px;
     border-radius: 20px;
+}
+
+@media only screen and (max-width: 640px) {
+    #portrait {
+        width: 175px;
+    }
 }
 
 .icons {
@@ -211,6 +254,7 @@ input:checked + .slider:before {
     cursor: pointer;
     padding-left: 20px;
 }
+
 #pdf_msg {
     margin-top: 20px;
 }
@@ -218,10 +262,17 @@ input:checked + .slider:before {
     background-color:rgb(245, 245, 245);
     margin-top: 5px;
     font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
     font-size: 16px;
     cursor: pointer;
     height: 35px;
     border-radius: 8px;
+}
+
+@media only screen and (max-width: 640px) {
+    .resume_button {
+        font-size: 12px;
+    }
 }
 
 .resume_button:hover {
@@ -234,13 +285,29 @@ input:checked + .slider:before {
     transform: translateY(4px);
 }
 
+#embedded_pdf {
+    width: 53vw;
+    height: 130vh;
+}
+
+@media only screen and (max-width: 640px) {
+    #embedded_pdf {
+        display: none;
+    }
+}
+
 .experience_grid {
     margin-top: 20px;
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 10px;
-    /* padding: 10px; */
-    /* grid-row-gap: 10px; */
+}
+
+@media only screen and (max-width: 1100px) {
+    .experience_grid {
+        grid-template-columns: auto auto;
+    }
+    
 }
 
 .grid_item {
@@ -253,11 +320,29 @@ input:checked + .slider:before {
     position: relative;
 }
 
+@media only screen and (max-width: 735px) {
+    .experience_grid {
+        grid-template-columns: auto;
+    }
+    .grid_item {
+        width: 50%;
+    }
+}
+
 .grid_image {
     width: 270px;
     height: 270px;
     object-fit: scale-down;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 640px) {
+    .grid_image {
+        width: 180px;
+        height: 180px;
+    }
 }
 
 .overlay {
@@ -288,9 +373,13 @@ input:checked + .slider:before {
     top: 50%;
     left: 50%;
     width: 90%;
-    /* margin-left: auto;
-    margin-right: auto; */
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 640px) {
+    .overlay_text {
+        font-size: 12px;
+    }
 }
